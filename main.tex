@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FAIMS3 Presentations
+% LaTeX Template
+% Version 1.0 (May 1, 2021)
+%
+% This template was created by:
+% Vel (enquiries@latextypesetting.com)
+% https://www.LaTeXTypesetting.com
+%
+%!TEX program = xelatex
+% Note: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+	aspectratio=169, % Wide slides by default
+	12pt, % Default font size
+	t, % Top align all slide content
+]{beamer}
+
+\usetheme{faims} % Use the FAIMS beamer theme
+\usecolortheme{faims} % Use the FAIMS beamer color theme
+
+\bibliography{references.bib} % BibLaTeX bibliography file
+\bibliography{faims-zotero-betterbibtex.bib}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{refsegment}
+%https://tex.stackexchange.com/a/19328
+%https://tex.stackexchange.com/a/223074
+%----------------------------------------------------------------------------------------
+%	 TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+
+% \title{FAIMS 3.0: Electronic Field Notebooks} % Presentation title
+% \author{S Ross, P Crook, B Ballsun-Stanton, S Cassidy, A Sobotkova, J Klump}   % Presentation author
+% \institute{Australian Astronomical Optics seminar}   % Author affiliation
+% \date{19 August 2021}    % Presentation date  
+
+
+\begin{titleframe} % Custom environment required for the title slide
+	\frametitle{From FAIMS to Fieldmark}
+	\framesubtitle{Electronic field notebooks for offline digital data collection}
+
+	S Ross, P Crook, B Ballsun-Stanton,\\ S Cassidy, A Sobotkova, J Klump
+
+    \medskip
+	Fenner School Seminars
+
+	\vfill
+
+	7 December 2022
+	
+\end{titleframe}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+% \begin{frame}
+% 	\frametitle{Table of Contents}
+% 	\framesubtitle{One Column}
+
+% 	\tableofcontents % Sections are automatically populated from \section{} commands through the presentation
+% \end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{Strategies for field data capture infrastructure}
+	%\framesubtitle{Two Columns}
+    
+    \begin{columns}[t]
+        \begin{column}{0.45\textwidth}
+            \tableofcontents[sections={1-3}] % Sections are automatically populated from \section{} commands through the presentation
+        \end{column}
+        \hfill
+        \begin{column}{0.45\textwidth}
+            \tableofcontents[sections={4-6}] % Sections are automatically populated from \section{} commands through the presentation
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+
+\input{slides/small_data_infrastructure}
+\input{slides/nine_years}
+\input{slides/faims_3}
+\input{slides/bushfires}
+\input{slides/thanks}
+\input{slides/references}
+
+% \input{slides/key_research_features}
+% \input{slides/faims_approach_in_detail}
+% \input{slides/reports_from_field}
+
+% DO NOT COMMENT THIS BIT OUT
+\end{refsegment}
+
+\input{slides/faims_bib}
+
+%----------------------------------------------------------------------------------------
+%	CLOSING SLIDE
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
